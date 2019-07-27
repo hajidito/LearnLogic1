@@ -4,8 +4,6 @@ Nama : HAJI DITO MURYA ALFAROHMI
 - NodeJS v8+
 - Code Editor
 
-### Instalation
-
 How to Run :
 
 ```sh

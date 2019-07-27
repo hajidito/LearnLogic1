@@ -2,7 +2,6 @@
 function splitWord(word){
     const splitArray = ['pro','gram','merit','program','it','programmer']
     let result=[]
-    let result2=[]
     for (let x = 0; x < splitArray.length; x++) {
         if (word.includes(splitArray[x])){
             result.push(splitArray[x])
@@ -10,12 +9,15 @@ function splitWord(word){
     }
     console.log(result)
     for (let y = 0; y < result.length; y++) {
-        if (result[y].concat(result[y+1]) == result[y+2]){
-            result.splice(y+2, 1);
+        for (let z = 0; z < result.length; z++) {
+            if (result[z].includes(result[y])){
+                result.splice(y, 1);
+                console.log(result)
+            }
         }
     }
-    console.log(result)
+    // console.log(result)
 }
 
-splitWord('programit')
+// splitWord('programit')
 splitWord('programmerit')
